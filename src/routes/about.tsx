@@ -3,8 +3,8 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 export const Route = createFileRoute('/about')({
   head: () => ({
     meta: [
-      { title: 'About Us | Delhi I Technologies' },
-      { name: 'description', content: 'Learn about Delhi I Technologies — our mission, vision, values, and the team driving IT innovation in Delhi, India.' },
+      { title: 'About Us | Cestovam Technologies' },
+      { name: 'description', content: 'Learn about Cestovam Technologies — our mission, vision, values, and the team driving IT innovation in Delhi, India.' },
     ],
   }),
   component: AboutPage,
@@ -20,21 +20,21 @@ const values = [
 ]
 
 const team = [
-  { name: 'Arjun Verma', role: 'CEO & Founder', expertise: 'Cloud Architecture, Business Strategy', initials: 'AV' },
-  { name: 'Sneha Patel', role: 'CTO', expertise: 'Full-Stack Development, DevOps', initials: 'SP' },
-  { name: 'Rohit Kapoor', role: 'Head of FinOps', expertise: 'Cloud Cost Optimization, AWS, Azure', initials: 'RK' },
-  { name: 'Nisha Singh', role: 'Lead Mobile Developer', expertise: 'Android, React Native, Flutter', initials: 'NS' },
-  { name: 'Vijay Malhotra', role: 'Head of Training', expertise: 'IT Education, DevOps, Cloud', initials: 'VM' },
-  { name: 'Kavita Reddy', role: 'Project Manager', expertise: 'Agile, Scrum, Client Relations', initials: 'KR' },
+  { name: 'Sanjeev Gupta', role: 'CEO & Founder', expertise: 'Cloud Architecture, Business Strategy', initials: 'AV' },
+  // { name: 'Sneha Patel', role: 'CTO', expertise: 'Full-Stack Development, DevOps', initials: 'SP' },
+  // { name: 'Rohit Kapoor', role: 'Head of FinOps', expertise: 'Cloud Cost Optimization, AWS, Azure', initials: 'RK' },
+  // { name: 'Nisha Singh', role: 'Lead Mobile Developer', expertise: 'Android, React Native, Flutter', initials: 'NS' },
+  // { name: 'Vijay Malhotra', role: 'Head of Training', expertise: 'IT Education, DevOps, Cloud', initials: 'VM' },
+  // { name: 'Kavita Reddy', role: 'Project Manager', expertise: 'Agile, Scrum, Client Relations', initials: 'KR' },
 ]
 
 const milestones = [
-  { year: '2016', event: 'Founded in Delhi with a team of 5 engineers' },
-  { year: '2018', event: 'Expanded to cloud services and FinOps practice' },
-  { year: '2020', event: 'Launched IT Training & Talent Development program' },
-  { year: '2022', event: 'Crossed 100+ enterprise clients milestone' },
-  { year: '2024', event: 'Launched Train & Deploy talent pipeline initiative' },
-  { year: '2025', event: 'Serving 50+ enterprise clients across India & abroad' },
+  // { year: '2016', event: 'Founded in Delhi with a team of 5 engineers' },
+  // { year: '2018', event: 'Expanded to cloud services and FinOps practice' },
+  // { year: '2020', event: 'Launched IT Training & Talent Development program' },
+  // { year: '2022', event: 'Crossed 100+ enterprise clients milestone' },
+  // { year: '2024', event: 'Launched Train & Deploy talent pipeline initiative' },
+  // { year: '2025', event: 'Serving 50+ enterprise clients across India & abroad' },
 ]
 
 function AboutPage() {
@@ -48,7 +48,7 @@ function AboutPage() {
             Driven by Technology.<br />Defined by Results.
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Delhi I Technologies was founded with a singular vision: to make enterprise-grade technology accessible to every business, regardless of size.
+            Cestovam Technologies was founded with a singular vision: to make enterprise-grade technology accessible to every business, regardless of size.
           </p>
         </div>
       </section>
@@ -58,19 +58,31 @@ function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div>
-              <span className="text-[#1E90FF] font-semibold text-sm uppercase tracking-widest">Our Story</span>
+              <span className="text-[#1E90FF] font-semibold text-sm uppercase tracking-widest"></span>
               <h2 className="text-3xl sm:text-4xl font-black text-[#0A1F44] mt-2 mb-5">
-                8+ Years of Delivering IT Excellence
+                Driving Innovation in Cloud, DevOps & Software Development
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Founded in 2016, Delhi I Technologies started as a boutique software development firm in the heart of India's capital. Our founders — engineers with experience at leading tech companies — saw a gap: businesses needed high-quality technology partners that truly understood their domain.
+                  Cestovam began with a simple belief — technology should not be complicated, expensive, or out of reach. It should empower businesses, not slow them down.
                 </p>
                 <p>
-                  Over the years, we expanded our capabilities across cloud infrastructure, mobile development, IT training, and FinOps — building a comprehensive suite of services that helps organizations at every stage of their digital journey.
+                  What started as a small initiative to help companies navigate cloud and modern development has grown into a full-service technology partner. From building scalable software to optimizing cloud infrastructure, we have worked with startups, growing businesses, and enterprises to turn ideas into reliable digital solutions.
                 </p>
                 <p>
-                  Today, we're proud to serve 50+ enterprise clients across India and internationally, with a team of over 40 technology experts passionate about solving complex challenges.
+                  At Cestovam, we don’t just deliver services — we solve real problems. Every project we take on is approached with a focus on performance, security, and scalability. Whether it’s designing a web application, automating infrastructure with DevOps, or reducing cloud costs through FinOps, our goal remains the same: create impact that lasts.
+                </p>
+                <p>
+                  Our strength lies in combining technical expertise with practical experience. We believe in hands-on execution, continuous learning, and staying ahead of industry trends. This allows us to deliver solutions that are not only modern but also future-ready.
+                </p>
+                <p>
+                  Beyond services, we are equally passionate about building talent. Through training, mentorship, and real-world projects, we help individuals and organizations grow stronger in cloud and DevOps technologies.
+                </p>
+                <p>
+                  Today, Cestovam stands as a trusted partner for businesses looking to build, deploy, and scale with confidence.
+                </p>
+                <p>
+                  Build. Deploy. Scale.
                 </p>
               </div>
             </div>
@@ -140,33 +152,52 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 bg-[#F5F7FA]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <span className="text-[#1E90FF] font-semibold text-sm uppercase tracking-widest">Meet the Team</span>
-            <h2 className="text-3xl sm:text-4xl font-black text-[#0A1F44] mt-2 mb-4">
-              The Experts Behind Your Success
-            </h2>
-            <p className="text-gray-600 max-w-xl mx-auto">
-              A diverse team of engineers, designers, and strategists passionate about building technology that works.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {team.map((member) => (
-              <div key={member.name} className="bg-white rounded-2xl p-7 border border-gray-100 card-hover text-center">
-                <div className="w-16 h-16 rounded-full bg-[#0A1F44] text-white text-xl font-bold flex items-center justify-center mx-auto mb-4">
-                  {member.initials}
-                </div>
-                <h4 className="font-bold text-[#0A1F44] text-lg mb-1">{member.name}</h4>
-                <div className="text-[#1E90FF] text-sm font-semibold mb-2">{member.role}</div>
-                <p className="text-gray-400 text-xs">{member.expertise}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Team / Expertise */}
+<section className="py-20 bg-[#F5F7FA]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {/* Heading */}
+    <div className="text-center mb-14">
+      <span className="text-[#1E90FF] font-semibold text-sm uppercase tracking-widest">
+        Our Expertise
+      </span>
 
+      <h2 className="text-3xl sm:text-4xl font-black text-[#0A1F44] mt-2 mb-4">
+        The People Behind Cestovam
+      </h2>
+
+      <p className="text-gray-600 max-w-xl mx-auto">
+        A passionate group of engineers and technology specialists focused on building scalable, secure, and high-performance digital solutions.
+      </p>
+    </div>
+
+    {/* Cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {team.map((member) => (
+        <div
+          key={member.name}
+          className="bg-white rounded-2xl p-7 border border-gray-100 card-hover text-center"
+        >
+          <div className="w-16 h-16 rounded-full bg-[#0A1F44] text-white text-xl font-bold flex items-center justify-center mx-auto mb-4">
+            {member.initials}
+          </div>
+
+          <h4 className="font-bold text-[#0A1F44] text-lg mb-1">
+            {member.name}
+          </h4>
+
+          <div className="text-[#1E90FF] text-sm font-semibold mb-2">
+            {member.role}
+          </div>
+
+          <p className="text-gray-400 text-xs">
+            {member.expertise}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
       {/* CTA */}
       <section className="section-pattern py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

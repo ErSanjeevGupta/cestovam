@@ -37,17 +37,17 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <img
-                src="/delhi-technologies-logo.jpg"
-                alt="Delhi I Technologies Logo"
+                src="/cestovam_logo.png"
+                alt="Cestovam Technologies Logo"
                 className="w-9 h-9 rounded-lg object-contain"
               />
-              <span className="font-bold text-base">Delhi I Technologies</span>
+              <span className="font-bold text-base">Cestovam Technologies</span>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-5">
               Innovating Your Digital Future. We deliver cutting-edge IT solutions that help businesses scale, grow, and succeed.
             </p>
             {/* LinkedIn Description (hidden) */}
-            {/* Delhi I Technologies is a full-service IT company based in Delhi, India. We specialize in custom software development, web & mobile applications, cloud infrastructure, FinOps, and IT training. Our mission is to bridge the gap between business goals and technology excellence. */}
+            {/* Cestovam Technologies is a full-service IT company based in Delhi, India. We specialize in custom software development, web & mobile applications, cloud infrastructure, FinOps, and IT training. Our mission is to bridge the gap between business goals and technology excellence. */}
             <div className="flex gap-3">
               <a href="#" aria-label="LinkedIn" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#1E90FF] transition-colors">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -107,14 +107,14 @@ export function Footer() {
               </li>
               <li className="flex gap-3">
                 <span className="text-[#1E90FF] shrink-0">✉️</span>
-                <a href="mailto:info@delhiitechnologies.com" className="hover:text-[#1E90FF] transition-colors">
-                  info@delhiitechnologies.com
+                <a href="mailto:info@cestovam.com" className="hover:text-[#1E90FF] transition-colors">
+                  info@cestovam.com
                 </a>
               </li>
               <li className="flex gap-3">
                 <span className="text-[#1E90FF] shrink-0">📞</span>
-                <a href="tel:+911234567890" className="hover:text-[#1E90FF] transition-colors">
-                  +91 12345 67890
+                <a href="tel:+917652057128" className="hover:text-[#1E90FF] transition-colors">
+                  +91 7652057128
                 </a>
               </li>
               <li className="flex gap-3">
@@ -129,7 +129,7 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/40">
-          <p>© {currentYear} Delhi I Technologies. All rights reserved.</p>
+          <p>© {currentYear} Cestovam Technologies. All rights reserved.</p>
           <div className="flex gap-5">
             <a href="#" className="hover:text-white/70 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white/70 transition-colors">Terms of Service</a>

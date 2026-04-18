@@ -3,8 +3,8 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 export const Route = createFileRoute('/')({
   head: () => ({
     meta: [
-      { title: 'Delhi I Technologies | Innovating Your Digital Future' },
-      { name: 'description', content: 'Delhi I Technologies — Custom software development, cloud solutions, Android apps, FinOps, and IT training in Delhi, India.' },
+      { title: 'Cestovam Technologies | Innovating Your Digital Future' },
+      { name: 'description', content: 'Cestovam Technologies — Custom software development, cloud solutions, Android apps, FinOps, and IT training in Delhi, India.' },
     ],
   }),
   component: HomePage,
@@ -125,14 +125,14 @@ function HomePage() {
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1E90FF]/20 border border-[#1E90FF]/30 text-[#1E90FF] text-sm font-medium mb-6">
                 <span className="w-2 h-2 rounded-full bg-[#1E90FF] animate-pulse" />
-                Delhi's Trusted IT Partner
+                Cestovam's Trusted IT Partner
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
                 Innovating Your<br />
                 <span className="gradient-text">Digital Future</span>
               </h1>
               <p className="text-white/70 text-lg sm:text-xl leading-relaxed mb-8 max-w-lg">
-                From custom software to cloud optimization — Delhi I Technologies delivers technology solutions that drive real business growth.
+                From custom software to cloud optimization — Cestovam Technologies delivers technology solutions that drive real business growth.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -310,7 +310,7 @@ function HomePage() {
               Get Free Consultation
             </Link>
             <a
-              href="tel:+911234567890"
+              href="tel:+917652057128"
               className="px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-all duration-200 hover:-translate-y-0.5"
             >
               📞 Call Us Now
