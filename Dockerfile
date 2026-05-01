@@ -5,32 +5,23 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Copy dependency manifests first (layer-cache friendly)
 COPY package.json package-lock.json ./
-
-# Install all dependencies (including devDependencies needed for build)
 RUN npm ci
 
-# Copy the rest of the source code
 COPY . .
-
-# Build the production bundle
 RUN npm run build
 
 # ─────────────────────────────────────────────
-# Stage 2: Serve
+# Stage 2: Run (Node.js SSR)
 # ─────────────────────────────────────────────
-FROM nginx:1.27-alpine AS runner
+FROM node:20-alpine AS runner
 
-# Remove the default nginx placeholder page
-RUN rm -rf /usr/share/nginx/html/*
+WORKDIR /app
 
-# Copy the built client assets from the builder stage
-COPY --from=builder /app/dist /usr/share/nginx/html
+# Copy only the built output
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/package.json ./
 
-# Nginx config: serve SPA with HTML5 history API fallback
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 3000
 
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["node", "dist/server/server.js"]
